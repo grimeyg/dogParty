@@ -1,0 +1,110 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+nav {
+  background-color:#75e2e6;
+  width:100%;
+  height:70px
+  border: 2px red
+}
+.navButtons{
+  float: right;
+}
+.siteAbout__ {
+  margin: 0px 0px 30px 580px;
+  color:#ffffff
+}
+.bgImg {
+  background-image: url(images/park.jpg);
+  height: 750px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 100%;
+}
+.nameDog {
+   display:block;
+   height:90px ;
+   width:300px ;
+   margin: 90px 0px 10px 585px;
+   font-size: 22px;
+}
+.subButt {
+   display: inline-block;
+   height:90px ;
+   width:300px ;
+   margin: 10px 0px 0px 585px ;
+   border: 0px solid gold;
+   font-size: 22px;
+   background-color:#75e2e6;
+}
+.left,
+.middle,
+.right  {
+  max-width: 450px;
+  float: left;
+  padding:100px;
+  height: 650px;
+}
+#bigDog {
+  display: block;
+}
+.dog {
+  width: 225px;
+  height: 225px;
+  border-radius:50%;
+  border-color:#048eaa;
+  /* box-shadow: 0 0 0 4pt #048eaa; */
+  margin: 0px auto;
+  border: 6px solid #048eaa;
+}
+#leftDog {
+  margin-left: 150px;
+  padding-left: 0px;
+}
+.nonsense {
+  font-family: sans-serif;
+}
+.dog3button {
+  width:225px;
+  font-size: 20px;
+  color: white;
+  background-color:#048eaa;
+  padding: 13px;
+  position: relative;
+  margin: 10px 0px 0px 235px;
+}
+#How {
+  margin-left: 160px;
+}
+.clearfix:after {
+    content: ' ';
+    display: table;
+    clear: both;
+}
+.centerH12 {
+  margin-left: 40px;
+}
+.centerH3 {
+  margin-left: 25px;
+}
+.socialMediaButt {
+margin: 15px 0px 0px 50px
+}
+#twit {
+  margin-left: 525px;
+}
+footer {
+  display: block;
+  background-color:#048eaa;
+  overflow: hidden;
+  height: 150px;
+  width: 100%;
+}
+p {
+  border: 3px solid red;
+}
+footer {
+  height: 100px;
+}
