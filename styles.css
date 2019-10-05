@@ -17,6 +17,9 @@ header {
 h1{
   font-size: 25px;
 }
+form {
+  border: 2px solid red;
+}
 .navButtons{
   float: right;
   margin-top: 25px;
@@ -38,18 +41,12 @@ h1{
 }
 .nameDog {
    display:block;
-   height:90px ;
-   width:300px ;
-   margin: 90px 0px 10px 585px;
+   height:70px ;
+   width:400px ;
+   margin: 0px 0px 20px 37%;
    font-size: 22px;
 }
-.subButt {
-   display: inline-block;
-   height:90px ;
-   width:300px ;
-   margin: 10px 0px 0px 585px ;
-   border: 0px solid gold;
-   font-size: 22px;
+#nameDoge {
    background-color:#75e2e6;
 }
 .left,
@@ -73,7 +70,7 @@ h1{
   border: 6px solid #048eaa;
 }
 #leftDog {
-  margin-left: 150px;
+  margin-left: 140px;
   padding-left: 0px;
 }
 .dog3button {
@@ -95,7 +92,7 @@ h1{
   margin-left: 40px;
 }
 .centerH3 {
-  margin-left: 25px;
+  margin-left: 20px;
 }
 .socialMediaButt {
 margin: 15px 0px 0px 50px;
@@ -112,9 +109,9 @@ footer {
   height: 150px;
   width: 100%;
 }
-p {
+/* p {
   border: 3px solid red;
-}
+} */
 footer {
   height: 200px;
 }
@@ -141,4 +138,10 @@ a {
   height:300px ;
   font-family: sans-serif;
   font-size: 20px;
+}
+#smallName {
+  width: 20%;
+  margin-left: 37%;
+  color: white;
+  font-size: 20px
 }
