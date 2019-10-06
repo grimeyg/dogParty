@@ -17,8 +17,18 @@ header {
 h1{
   font-size: 25px;
 }
-form {
-  border: 2px solid red;
+footer {
+  display: block;
+  background-color:#048eaa;
+  overflow: hidden;
+  height: 220px;
+  width: 100%;
+}
+a {
+  color: black;
+  text-decoration:none;
+  margin: 20px;
+  font-size: 24px;
 }
 .navButtons{
   float: right;
@@ -32,30 +42,40 @@ form {
   font-size: 44px;
 }
 .bgImg {
-  background: linear-gradient( rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38) ), url(images/park.jpg);
-  height: 750px;
+  background: linear-gradient( rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32) ), url(images/park.jpg);
+  height: 600px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   opacity: 100%;
-  opacity: 30
+  opacity: 30;
+  border-bottom: 3px solid lightGray;
+}
+#smallName {
+  display:block;
+  text-indent:34.5%;
+  color: white;
+  font-size: 20px;
 }
 .nameDog {
    display:block;
-   height:70px ;
-   width:400px ;
-   margin: 0px 0px 20px 37%;
-   font-size: 22px;
+   height:60px ;
+   width:450px ;
+   margin: 0px auto;
+   font-size: 20px;
 }
 #nameDoge {
    background-color:#75e2e6;
+   margin-top: 25px
 }
 .left,
 .middle,
 .right  {
-  max-width: 450px;
+  display: inline-block;
   float: left;
-  padding:100px;
-  height: 1000px;
+  padding:25px 90px 0px 90px;
+  height: 770px;
+  margin: 0px;
+  border: 2px solid red;
 }
 #bigDog {
   display: block;
@@ -69,19 +89,21 @@ form {
   margin: 0px auto;
   border: 6px solid #048eaa;
 }
+.dogMargin {
+  margin-left: 20px
+}
 #leftDog {
-  margin-left: 140px;
-  padding-left: 0px;
+  margin-left: 25px;
+  /* padding-left: 0px; */
 }
 .dog3button {
-  width:225px;
+  width:280px;
   font-size: 20px;
   color: white;
   background-color:#048eaa;
   padding: 13px;
   display: block;
-  margin-top: 100px;
-  margin-left: 15px;
+  margin:auto;
 }
 .clearfix:after {
     content: ' ';
@@ -89,31 +111,22 @@ form {
     clear: both;
 }
 .centerH12 {
-  margin-left: 40px;
+  margin-left: 21%;
 }
 .centerH3 {
-  margin-left: 20px;
+  margin-left: 14%;
 }
 .socialMediaButt {
+display: inline-block;
 margin: 15px 0px 0px 50px;
-width:3.5%;
-height: auto;
+}
+#smButtonCenter {
+  width: 90%;
+  display: block;
+  margin: auto;
 }
 #twit {
-  margin-left: 525px;
-}
-footer {
-  display: block;
-  background-color:#048eaa;
-  overflow: hidden;
-  height: 150px;
-  width: 100%;
-}
-/* p {
-  border: 3px solid red;
-} */
-footer {
-  height: 200px;
+  margin-left: 34.5%;
 }
 .mid {
   width: 100%;
@@ -122,12 +135,6 @@ footer {
   color: white;
   font-size: 20px;
   padding-top: 20px;
-}
-a {
-  color: black;
-  text-decoration:none;
-  margin: 20px;
-  font-size: 24px;
 }
 .icon {
   margin-left: 25px;
@@ -138,10 +145,8 @@ a {
   height:300px ;
   font-family: sans-serif;
   font-size: 20px;
+  border: 2px solid red;
 }
-#smallName {
-  width: 20%;
-  margin-left: 37%;
-  color: white;
-  font-size: 20px
+#blackBorder {
+  border:1px solid black;
 }
