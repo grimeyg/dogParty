@@ -67,21 +67,20 @@ a {
 }
 #nameDoge {
    background-color:#75e2e6;
-   margin-top: 25px
+   margin-top: 25px;
 }
 .left,
 .middle,
 .right  {
-  display: inline-block;
   float: left;
-  width:33%;
-  padding:25px 90px 0px 90px;
+  padding:25px 70px 0px 70px;
   height: 770px;
-  margin: auto;
+  margin:3px;
+  border: 0px solid gold;
 }
-#leftDog {
-  margin-left: 12px;
-}
+/* #leftDog {
+  margin-left: 3px;
+} */
 .dog {
   width: 225px;
   height: 225px;
@@ -95,7 +94,7 @@ a {
   display: block;
 }
 .dogMargin {
-  margin-left: 20px
+  margin-left: 20px;
 }
 .dog3button {
   width:320px;
@@ -127,7 +126,7 @@ margin: 15px 0px 0px 50px;
   margin: auto;
 }
 #twit {
-  margin-left: 34.5%;
+  margin-left: 28%;
 }
 .mid {
   width: 100%;

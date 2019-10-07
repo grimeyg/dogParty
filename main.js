@@ -6,7 +6,8 @@ nameDog.addEventListener("click", function(){
   if (typeDog.value === ""){
     null;
   }
-  else {nameDisplay.innerText = typeDog.value;
+  else {
+    nameDisplay.innerText = typeDog.value;
     return typeDog.value = "";
   }
 });
