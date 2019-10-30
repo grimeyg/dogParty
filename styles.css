@@ -1,152 +1,111 @@
-*,
-*:after,
-*:before {
-  box-sizing: border-box;
-}
 body {
-  margin: 0px;
-  font-family: "Open Sans", sans-serif;
-  border:4px black;
-}
-header {
-  background-color:#75e2e6;
-  width:100%;
-  height:85px;
-  border-bottom: 3px solid #048eaa;
-}
-h1{
-  font-weight: normal;
-  font-size: 25px;
-}
-strong {
-  font-weight: 800;
- }
-footer {
-  display: block;
-  background-color:#048eaa;
-  overflow: hidden;
-  height: 220px;
-  width: 100%;
-}
-a {
-  color: black;
-  text-decoration:none;
-  margin: 20px;
-  font-size: 24px;
-}
-.navButtons{
-  float: right;
-  margin-top: 25px;
-}
-.siteAbout__ {
-  margin: 0px 0px 35px 0px;
-  text-align: center;
-  color:#ffffff;
-  padding: 30px 0px 0px 15px;
-  font-size: 42px;
-}
-.bgImg {
-  background: linear-gradient( rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32) ), url(images/park.jpg);
-  height: 600px;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  border-bottom: 3px solid lightGray;
-}
-#smallName {
-  display:block;
-  text-indent:34.5%;
-  color: white;
-  font-size: 20px;
-}
-.nameDog {
-   display:block;
-   height:60px ;
-   width:450px ;
-   margin: 0px auto;
-   font-size: 20px;
-}
-#nameDoge {
-   background-color:#75e2e6;
-   margin-top: 25px;
-}
-.left,
-.middle,
-.right  {
-  float: left;
-  padding:25px 70px 0px 70px;
-  height: 770px;
-  margin:3px;
-  border: 0px solid gold;
-}
-/* #leftDog {
-  margin-left: 3px;
-} */
-.dog {
-  width: 225px;
-  height: 225px;
-  border-radius:50%;
-  border-color:#048eaa;
-  /* box-shadow: 0 0 0 4pt #048eaa; */
-  margin: 0px auto;
-  border: 6px solid #048eaa;
-}
-#bigDog {
-  display: block;
-}
-.dogMargin {
-  margin-left: 20px;
-}
-.dog3button {
-  width:320px;
-  font-size: 20px;
-  color: white;
-  background-color:#048eaa;
-  padding: 13px;
-  display: block;
   margin:0px auto;
+  display: grid;
+  grid-template-areas:
+  "nav top-form"
+  "nav dog1"
+  "nav dog2"
+  "nav dog3"
+  "nav footer";
+  grid-template-rows: 1fr .6fr .6fr .6fr .4fr;
+  grid-template-columns: 200px auto;
+  font-family: "Open Sans", sans-serif;
 }
-.clearfix:after {
-    content: ' ';
-    display: table;
-    clear: both;
+
+header {
+grid-area: nav;
+background-color: #9A969C;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-right: 3px solid black;
 }
-.centerH12 {
-  margin-left: 21%;
+
+.bgImg {
+  grid-area: top-form;
+  background-color: #3E3544;
+  color: #ffffff;
+  display: grid;
+  grid-template-areas: "dog form";
 }
-.centerH3 {
-  margin-left: 14%;
+
+.left {
+  grid-area: dog1;
 }
-.socialMediaButt {
-display: inline-block;
-margin: 15px 0px 0px 50px;
+
+.middle {
+  grid-area: dog2;
 }
-#smButtonCenter {
-  width: 90%;
-  display: block;
-  margin: auto;
+
+.right {
+  grid-area: dog3;
 }
-#twit {
-  margin-left: 28%;
+
+footer {
+  grid-area: footer;
+  background-color: #3E3544;
 }
-.mid {
-  width: 100%;
-  display: block;
-  text-align: center;
-  color: white;
-  font-size: 20px;
-  padding-top: 20px;
-}
+
 .icon {
-  margin-left: 25px;
-  margin-top: 8px;
+  height: 150px;
+  width: 150px;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
-.nonsense {
-  width:315px ;
-  height:280px ;
-  font-family: sans-serif;
-  font-size: 20px;
-  font-weight: 500;
+
+.navButtons {
+height:220px;
+display:flex;
+flex-direction: column;
+justify-content: space-around;
 }
-#blackBorder {
-  border:1px solid black;
+
+#bigDog {
+  grid-area: dog;
+  height: 400px;
+  width: 400px;
+  border: 10px solid #9A969C;
+  margin: 30px 0px 30px 50px;
+}
+
+.siteAbout__,
+#smallName,
+form {
+  grid-area: form;
+  align-items:stretch;
+}
+
+article {
+  display: grid;
+  grid-template-areas:
+  "artName null"
+  "dogPic paragraph"
+  "dogPic button";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 4fr;
+}
+
+
+.centerH1,
+.centerH2,
+.centerH3 {
+  grid-area: artName;
+}
+
+.nonsense{
+  grid-area: paragraph;
+}
+
+.dog {
+  height: 200px;
+  width: 200px;
+  border-radius:50%;
+  border: 6px solid #9A969C;
+  grid-area: dogPic;
+}
+
+.dog3button {
+  grid-area: button;
+  height: 60px;
+  width: 200px;
 }
